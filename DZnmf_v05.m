@@ -1947,8 +1947,13 @@ if get(H.check_nmf, 'Value') == 1
 	BaseName=' Sources';
 	tst3{1,1}=[num2str(nsources),BaseName];
 	[file,path] = uiputfile('*.xls','Save file');
-	warning('off','MATLAB:xlswrite:AddSheet');
-	xlswrite([path file], export, char(tst3(1,1)));
+	%warning('off','MATLAB:xlswrite:AddSheet');
+	if ismac == 1
+		xlwrite([path file], export, char(tst3(1,1)));
+	end
+	if ispc == 1
+		xlswrite([path file], export, char(tst3(1,1)));
+	end
 	%RemoveSheet123([path file]);
 	%warning('off');
 end
@@ -1961,9 +1966,18 @@ if get(H.check_nmf_opt, 'Value') == 1
 	end
 	[file,path] = uiputfile('*.xls','Save file');
 	warning('off','MATLAB:xlswrite:AddSheet');
-	for i=1:iter_num-1
-		xlswrite([path file], export(:,:,i), char(tst3(1,i)));
+	if ismac == 1
+		for i=1:iter_num-1
+			xlwrite([path file], export(:,:,i), char(tst3(1,i)));
+		end
 	end
+	if ispc == 1
+		for i=1:iter_num-1
+			xlswrite([path file], export(:,:,i), char(tst3(1,i)));
+		end
+	end	
+	
+	
 	%RemoveSheet123([path file]);
 	%warning('off');
 end
