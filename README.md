@@ -12,7 +12,7 @@ DZnmf can be run in MATLAB or as a standalone .exe file (Windows) or .app file (
 
 To run as a standalone program DZnmf requires the free MATLAB Runtime Compiler 2018b version 9.5. There are separate compilers for macOS and Windows. Install the compiler first, then run the .exe (Windows) or .app (macOS).
 
-Here are the links for the compilers (click to start download). Follow all of the default settings to install. Nothing will happen following installation -- there is no need to open the compiler -- DZmix will access it automatically.
+Here are the links for the compilers (click to start download). Follow all of the default settings to install. Nothing will happen following installation -- there is no need to open the compiler -- DZnmf will access it automatically.
 
 Windows:
 
