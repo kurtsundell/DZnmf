@@ -2,6 +2,8 @@
 
 ## Saylor et al. (2019)
 
+## Saylor, J.E., Sundell, K.E. and Sharman, G.R., 2019. Characterizing sediment sources by non-negative matrix factorization of detrital geochronological data. Earth and Planetary Science Letters, 512, pp.46-58.
+
 ### Run in MATLAB
 
 To run DZnmf in MATLAB open the DZnmf.m file and run it.
