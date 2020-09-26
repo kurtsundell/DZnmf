@@ -571,8 +571,8 @@ if get(H.check_nmf_opt, 'Value') == 1
         stdev_K_S(j)=std(K_S(j,:));
     end
     %%END Saylor edits 29 May
-        
-    source_PDP = source_PDP_loop(:,:,breakpoint);
+
+	source_PDP = source_PDP_loop(:,:,brkpnt_coef);
 	nsources = breakpoint;
     
     %%Saylor edits 29 May
